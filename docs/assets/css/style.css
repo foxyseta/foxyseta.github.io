@@ -1,6 +1,10 @@
-@import "normalize";
-@import "rouge-github";
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import "normalize.css";
+@import "rouge-github.css";
+
+@font-face {
+  font-family: 'Architects Daughter';
+  src: url(../ttf/ArchitectsDaughter-Regular.ttf);
+}
 
 /* LAYOUT STYLES */
 body {
