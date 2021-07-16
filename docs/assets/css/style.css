@@ -108,6 +108,7 @@ aside#sidebar {
   padding: 0 20px 0 20px;
   line-height: 2.0;
   border-right: dashed 1px #aaa;
+  font-size: 20px;
 }
 
 aside#sidebar p.repo-owner,
