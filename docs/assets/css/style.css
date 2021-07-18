@@ -217,8 +217,6 @@ form {
 
 #main-content h1 {
   width: 80%;
-  margin-top: 0;
-  margin-bottom: 0;
   font-family: Schoolbell, 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 2.8em;
   font-weight: normal;
@@ -338,7 +336,6 @@ ol {
 
 li:before {
   content: '›';
-  margin-left: -20px;
   margin-right: 10px;
 }
 
