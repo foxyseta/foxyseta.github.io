@@ -85,6 +85,8 @@ header h2 {
 
 #main-content img {
   max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 img.profile {
