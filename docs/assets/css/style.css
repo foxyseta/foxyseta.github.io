@@ -35,7 +35,7 @@ a:hover {
 header {
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: Schoolbell, 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Schoolbell, "Helvetica Neue", Helvetica, Arial, serif;
   background: #666 url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: dashed 1px #aaa;
 }
@@ -83,7 +83,8 @@ header h2 {
   padding-right: 20px;
 }
 
-#main-content img,video {
+#main-content img,
+video {
   max-width: 100%;
   display: block;
   margin: auto;
@@ -105,10 +106,10 @@ div#page-title {
 }
 
 aside#sidebar {
-  font-family: Schoolbell, 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Schoolbell, "Helvetica Neue", Helvetica, Arial, serif;
   float: left;
   padding: 0 20px 0 20px;
-  line-height: 2.0;
+  line-height: 2;
   border-right: dashed 1px #aaa;
   font-size: 20px;
 }
@@ -127,7 +128,7 @@ a.button {
   height: 58px;
   padding-top: 22px;
   padding-left: 68px;
-  font-family: Schoolbell, 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Schoolbell, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 23px;
   line-height: 1.2;
   color: #fff;
@@ -151,9 +152,11 @@ aside a.button {
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
 
-code, pre {
+code,
+pre {
   margin-bottom: 30px;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
+    monospace;
   font-size: 13px;
   color: #aaa;
 }
@@ -178,10 +181,11 @@ pre code {
   border: none;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
   margin-bottom: 20px;
 }
-
 
 /* COMMON STYLES */
 
@@ -211,15 +215,13 @@ td {
 form {
   padding: 20px;
   background: #ccc;
-
 }
-
 
 /* GENERAL ELEMENT TYPE STYLES */
 
 #main-content h1 {
   width: 80%;
-  font-family: Schoolbell, 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Schoolbell, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 2.8em;
   font-weight: normal;
   color: #aaa;
@@ -235,7 +237,7 @@ form {
 
 #main-content h2 {
   margin: 8px;
-  font-family: Schoolbell, 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Schoolbell, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: bold;
   color: #aaa;
@@ -250,7 +252,7 @@ form {
 #main-content h3 {
   margin-top: 8px;
   margin-bottom: 8px;
-  font-family: Schoolbell, 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Schoolbell, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 18px;
   font-weight: bold;
   color: #aaa;
@@ -265,7 +267,7 @@ form {
 
 #main-content h4 {
   margin-bottom: 8px;
-  font-family: Schoolbell, 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Schoolbell, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 16px;
   font-weight: bold;
   color: #aaa;
@@ -280,7 +282,7 @@ h4:before {
 
 #main-content h5 {
   margin-bottom: 8px;
-  font-family: Schoolbell, 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Schoolbell, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 14px;
   color: #aaa;
   text-indent: 3px;
@@ -293,8 +295,8 @@ h5:before {
 
 #main-content h6 {
   margin-bottom: 8px;
-  font-family: Schoolbell, 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: .8em;
+  font-family: Schoolbell, "Helvetica Neue", Helvetica, Arial, serif;
+  font-size: 0.8em;
   color: #aaa;
   text-indent: 3px;
 }
@@ -319,7 +321,7 @@ p a {
 blockquote {
   padding: 0 0 0 10px;
   margin-bottom: 20px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Schoolbell, "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 16px;
   border-left: 1px dashed #aaa;
 }
@@ -337,7 +339,7 @@ ol {
 }
 
 li:before {
-  content: '›';
+  content: "›";
   margin-right: 10px;
 }
 
@@ -367,25 +369,33 @@ footer a:hover {
   height: 0;
   clear: both;
   visibility: hidden;
-  content: '.';
+  content: ".";
 }
 
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
 
 /* #Media Queries
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) { }
+@media only screen and (max-width: 959px) {
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .inner {
     width: 740px;
   }
-  header h1, header h2 {
+  header h1,
+  header h2 {
     width: 340px;
   }
   header h1 {
@@ -419,7 +429,8 @@ footer a:hover {
   header .inner {
     position: relative;
   }
-  header h1, header h2 {
+  header h1,
+  header h2 {
     width: 100%;
   }
   header h1 {
@@ -451,7 +462,7 @@ footer a:hover {
   }
   aside#sidebar {
     float: none;
-    width: 100% ! important;
+    width: 100% !important;
   }
   aside#sidebar {
     min-height: 0;
@@ -474,7 +485,9 @@ footer a:hover {
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) { }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) { }
+@media only screen and (max-width: 479px) {
+}
