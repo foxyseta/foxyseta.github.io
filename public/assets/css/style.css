@@ -90,6 +90,10 @@ video {
   margin: auto;
 }
 
+#main-content img.icon {
+  display: inline;
+}
+
 img.profile {
   border-radius: 50%;
   margin: 0 20px;
