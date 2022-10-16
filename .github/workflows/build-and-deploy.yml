@@ -36,7 +36,7 @@ jobs:
       - name: Generate build artifact
         uses: actions/upload-artifact@v2
         with:
-          name: github-pages
+          name: site
           path: public/
 
   deploy:
@@ -51,6 +51,19 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/main'
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Download static site artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: site
+          path: site
+      - name: Setup Pages
+        uses: actions/configure-pages@v1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@main
