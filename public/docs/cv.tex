@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the cv.cls file to be in the same directory as the
+% .tex file. The cv.cls file provides the cv style used for structuring the
+% document.
+%
+% Edited by Stefano Volpe (https://foxyseta.github.io):
+% - prettify
+% - remove colored text
+% - add title, author
+% - add content (my CV)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+\documentclass{cv} % Use the custom cv.cls style
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+	pdftitle={Stefano Volpe's CV},
+	pdfauthor={Stefano Volpe}
+}
+\usepackage{bookmark}
+
+% Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.1in]{geometry}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Stefano Volpe} % Your name
+\address{36, via Marconi \\ Bologna, 40122 (Italy)} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess
+\address{
+	\href{https://github.com/foxyseta}{github.com/foxyseta} \\
+	\href{https://foxyseta.github.io}{foxyseta.github.io}
+}
+\address{
+	\href{mailto:stefano.volpe2@studio.unibo.it}{stefano.volpe2@studio.unibo.it}
+} % Your phone number and email
+
+\renewenvironment{rSection}[1]{
+	\sectionskip
+	% \textcolor{RoyalPurple}{\MakeUppercase{#1}}
+	\par\refstepcounter{section}
+	\sectionmark{#1}
+	\addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}
+	\MakeUppercase{#1}
+	\sectionlineskip
+	\hrule
+	\begin{list}{}{
+			\setlength{\leftmargin}{1.5em}
+		}
+		\item[]
+			}{
+	\end{list}
+}
+
+\begin{document}
+
+\begin{rSection}{Education}
+	{\bf University of Bologna} \hfill
+	\\ Bachelor in Computer Science \hfill {\em September 2020 - Present}
+\end{rSection}
+
+\begin{rSection}{Grants and Awards} \itemsep -2pt
+	{Merit-based grant (\emph{University of Bologna})}\hfill {\em May 2022} \\
+	{\emph{Romanae Disputationes} national contest, 1\textsuperscript{st} place}
+	\hfill {\em February 2020} \\
+	{Merit-based grant (\emph{Associazione Oriani})} \hfill {\em December 2019} \\
+	{Merit-based grant (\emph{Associazione Oriani})} \hfill {\em December 2018}
+\end{rSection}
+
+\begin{rSection}{Lectures}
+	{\bf University of Bologna} \hfill {\em Bologna, Italy}
+	\\ \emph{An Introduction to Git} (peer-to-peer lecture)
+	\hfill {\em November 2022}
+\end{rSection}
+
+\begin{rSection}{Industry Experience}
+	{\bf devDept Software S.r.l.} \hfill {\em Borgo Panigale (BO), Italy}
+	\\ Junior Programmer Analyst
+	\hfill {\em October 2021 -- Present}
+
+	{\bf Tozzi Group} \hfill {\em Mezzano (RA), Italy}
+	\\ IT technician, full-stack developer (intern)
+	\hfill {\em June 2019 -- July 2019}
+\end{rSection}
+
+\begin{rSection}{Service Experience}
+	{\bf Italian Catholic Federation of University Students (Bologna group)}
+	\hfill \\ Group President
+	\hfill {\em February 2022 -- Present}
+
+	{\bf Francis of Paola's parish} \hfill {\em Lugo (RA), Italy}
+	\\ Sunday School Teacher
+	\hfill {\em September 2017 -- May 2022}
+
+	{\bf \emph{Liceo Scientifico ``A. Oriani''}} \hfill {\em Ravenna, Italy}
+	\\ Volunteer Tutor
+	\hfill {\em November 2018 -- February 2020}
+\end{rSection}
+
+\begin{rSection}{Interests} \itemsep -2pt
+	Logic, theoretical computer science, mathematics, information theory, game
+	theory, decision theory
+\end{rSection}
+
+\begin{rSection}{Languages} \itemsep -2pt
+	English (proficient), French (basic), Italian (native speaker)
+\end{rSection}
+
+\begin{rSection}{Skills}
+	\begin{tabular}{ >{\bfseries}p{0.30\linewidth} p{0.65\linewidth} }
+		Operating Systems & Linux systems                                     \\
+		Code editors      & Vim, Neovim                                       \\
+		Languages         & Agda, C, C++, C\#, Dockerfile, Haskell, Go, Java,
+		JavaScript, \LaTeX, MatProg, PHP, Python, Scheme, SQL,
+		TypeScript                                                            \\
+	\end{tabular}
+\end{rSection}
+
+\end{document}
